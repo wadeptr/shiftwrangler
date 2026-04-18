@@ -1,5 +1,7 @@
 # Shiftwrangler
 
+![shift-wrangler-logo-text](./assets/shift-wrangler-logo-text.png)
+
 > Round up your agents. Rest easy. Ride out at dawn.
 
 `swctl` is the CLI for Shiftwrangler — an agent session lifecycle manager that pauses, sleeps, wakes, and resumes your AI agent sessions automatically.
