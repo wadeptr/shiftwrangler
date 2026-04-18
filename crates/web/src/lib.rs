@@ -6,7 +6,7 @@ use axum::{
     Router,
 };
 use serde_json::{json, Value};
-use shift_manager_state::StateBackend;
+use shiftwrangler_state::StateBackend;
 use std::sync::Arc;
 
 #[derive(Clone)]
@@ -23,7 +23,7 @@ pub fn router(app_state: AppState) -> Router {
 }
 
 async fn index() -> &'static str {
-    "shift-manager dashboard — /api/status  /api/sessions"
+    "shiftwrangler dashboard — /api/status  /api/sessions"
 }
 
 async fn api_status() -> Json<Value> {
@@ -45,7 +45,7 @@ async fn api_sessions(State(state): State<AppState>) -> Result<Json<Value>, Stat
 mod tests {
     use super::*;
     use axum::{body::Body, http::Request};
-    use shift_manager_state::local_fs::LocalFsBackend;
+    use shiftwrangler_state::local_fs::LocalFsBackend;
     use tempfile::tempdir;
     use tower::ServiceExt;
 

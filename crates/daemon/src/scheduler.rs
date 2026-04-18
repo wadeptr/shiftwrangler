@@ -1,5 +1,5 @@
-use chrono::{Local, NaiveTime, Timelike};
-use shift_manager_core::{
+use chrono::{NaiveTime, Timelike};
+use shiftwrangler_core::{
     error::Result,
     schedule::{ScheduleConfig, SuspendTrigger},
 };

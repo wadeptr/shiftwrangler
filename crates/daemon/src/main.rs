@@ -13,7 +13,7 @@ async fn main() -> Result<()> {
         .with_env_filter(EnvFilter::from_default_env())
         .init();
 
-    info!("shift-manager daemon starting");
+    info!("shiftwrangler daemon starting");
 
     // Config, agents, platform, and state backend are wired up here.
     // The CLI crate is the primary entry point; this binary is for running

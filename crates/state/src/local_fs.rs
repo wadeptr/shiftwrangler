@@ -1,5 +1,5 @@
 use async_trait::async_trait;
-use shift_manager_core::{
+use shiftwrangler_core::{
     error::{Result, ShiftError},
     manifest::Manifest,
 };
@@ -28,7 +28,7 @@ impl LocalFsBackend {
         PathBuf::from(home)
             .join(".local")
             .join("share")
-            .join("shift-manager")
+            .join("shiftwrangler")
             .join("manifest.json")
     }
 }
@@ -69,7 +69,7 @@ impl StateBackend for LocalFsBackend {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use shift_manager_core::{
+    use shiftwrangler_core::{
         agent::tests::{make_session, make_state},
         manifest::Manifest,
     };

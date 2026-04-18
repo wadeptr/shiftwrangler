@@ -26,5 +26,5 @@ wake_at = "08:00"
 bind = "127.0.0.1:8765"
 
 [state]
-# Path to manifest file (defaults to ~/.local/share/shift-manager/manifest.json)
-# manifest_path = "/home/user/.local/share/shift-manager/manifest.json"
+# Path to manifest file (defaults to ~/.local/share/shiftwrangler/manifest.json)
+# manifest_path = "/home/user/.local/share/shiftwrangler/manifest.json"

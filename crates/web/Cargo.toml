@@ -1,11 +1,11 @@
 [package]
-name = "shift-manager-web"
+name = "shiftwrangler-web"
 version.workspace = true
 edition.workspace = true
 
 [dependencies]
-shift-manager-core = { path = "../core" }
-shift-manager-state = { path = "../state" }
+shiftwrangler-core = { path = "../core" }
+shiftwrangler-state = { path = "../state" }
 axum.workspace = true
 tower.workspace = true
 tower-http.workspace = true

@@ -1,6 +1,6 @@
-use shift_manager_core::agent::AgentAdapter;
+use shiftwrangler_core::agent::AgentAdapter;
 use std::sync::Arc;
-use tracing::{info, warn};
+use tracing::warn;
 
 /// Polls all registered sessions and logs any that have died unexpectedly.
 pub struct HealthMonitor {
@@ -36,7 +36,7 @@ impl HealthMonitor {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use shift_manager_core::agent::tests::MockAgentAdapter;
+    use shiftwrangler_core::agent::tests::MockAgentAdapter;
 
     #[tokio::test]
     async fn check_all_handles_empty_adapters() {
@@ -50,7 +50,7 @@ mod tests {
         agent.expect_agent_type().return_const("test");
         agent
             .expect_discover()
-            .returning(|| Err(shift_manager_core::ShiftError::Agent("err".into())));
+            .returning(|| Err(shiftwrangler_core::ShiftError::Agent("err".into())));
 
         let monitor = HealthMonitor::new(vec![Arc::new(agent)]);
         monitor.check_all().await; // must not panic

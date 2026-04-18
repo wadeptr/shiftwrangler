@@ -1,14 +1,14 @@
 [package]
-name = "shift-manager-daemon"
+name = "shiftwrangler-daemon"
 version.workspace = true
 edition.workspace = true
 
 [dependencies]
-shift-manager-core = { path = "../core" }
-shift-manager-agents = { path = "../agents" }
-shift-manager-platforms = { path = "../platforms" }
-shift-manager-state = { path = "../state" }
-shift-manager-web = { path = "../web" }
+shiftwrangler-core = { path = "../core" }
+shiftwrangler-agents = { path = "../agents" }
+shiftwrangler-platforms = { path = "../platforms" }
+shiftwrangler-state = { path = "../state" }
+shiftwrangler-web = { path = "../web" }
 tokio.workspace = true
 async-trait.workspace = true
 serde.workspace = true
@@ -25,5 +25,5 @@ toml.workspace = true
 [dev-dependencies]
 mockall.workspace = true
 tokio = { workspace = true, features = ["full"] }
-shift-manager-core = { path = "../core", features = ["test-utils"] }
+shiftwrangler-core = { path = "../core", features = ["test-utils"] }
 tempfile = "3"

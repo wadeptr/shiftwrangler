@@ -14,11 +14,11 @@ pub enum DaemonCommand {
 pub async fn handle(cmd: DaemonCommand) -> Result<()> {
     match cmd {
         DaemonCommand::Start => {
-            println!("Starting shift-manager daemon...");
+            println!("Starting shiftwrangler daemon...");
             // TODO: spawn daemon process / systemd unit
         }
         DaemonCommand::Stop => {
-            println!("Stopping shift-manager daemon...");
+            println!("Stopping shiftwrangler daemon...");
         }
         DaemonCommand::Status => {
             println!("Daemon status: not yet implemented");

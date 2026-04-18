@@ -1,16 +1,16 @@
 [package]
-name = "shift-manager"
+name = "shiftwrangler"
 version.workspace = true
 edition.workspace = true
 
 [[bin]]
-name = "shift-manager"
+name = "swctl"
 path = "src/main.rs"
 
 [dependencies]
-shift-manager-core = { path = "../core" }
-shift-manager-daemon = { path = "../daemon" }
-shift-manager-state = { path = "../state" }
+shiftwrangler-core = { path = "../core" }
+shiftwrangler-daemon = { path = "../daemon" }
+shiftwrangler-state = { path = "../state" }
 tokio.workspace = true
 clap.workspace = true
 anyhow.workspace = true

@@ -1,6 +1,6 @@
 use async_trait::async_trait;
 use chrono::Utc;
-use shift_manager_core::{
+use shiftwrangler_core::{
     agent::{AgentAdapter, Session, SessionId, SessionState, SessionStatus},
     error::{Result, ShiftError},
 };
@@ -120,7 +120,7 @@ impl AgentAdapter for ClaudeCodeAdapter {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use shift_manager_core::agent::tests::{make_session, make_state};
+    use shiftwrangler_core::agent::tests::{make_session, make_state};
 
     #[test]
     fn resume_command_format() {

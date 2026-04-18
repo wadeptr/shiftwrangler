@@ -1,9 +1,9 @@
 use async_trait::async_trait;
-use shift_manager_core::{
+use shiftwrangler_core::{
     error::{Result, ShiftError},
     platform::{Platform, PlatformMode, Target},
 };
-use tracing::{info, warn};
+use tracing::info;
 
 /// Manages a remote machine via SSH commands and Wake-on-LAN.
 pub struct SshPlatform;
@@ -54,6 +54,7 @@ impl Platform for SshPlatform {
             .ok_or_else(|| ShiftError::Platform("SSH target has no host".into()))?;
 
         let result = run_ssh_command(target, "true").await;
+        let _ = host;
         Ok(result.is_ok())
     }
 }

@@ -1,6 +1,6 @@
 use async_trait::async_trait;
 use chrono::Utc;
-use shift_manager_core::{
+use shiftwrangler_core::{
     agent::{AgentAdapter, Session, SessionId, SessionState, SessionStatus},
     error::{Result, ShiftError},
 };
@@ -113,7 +113,7 @@ impl AgentAdapter for ShellProcessAdapter {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use shift_manager_core::agent::tests::make_session;
+    use shiftwrangler_core::agent::tests::make_session;
 
     #[tokio::test]
     async fn discover_returns_empty_by_default() {

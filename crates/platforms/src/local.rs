@@ -1,5 +1,5 @@
 use async_trait::async_trait;
-use shift_manager_core::{
+use shiftwrangler_core::{
     error::{Result, ShiftError},
     platform::{Platform, PlatformMode, Target},
 };
@@ -71,7 +71,7 @@ pub async fn set_rtc_alarm(wake_timestamp: i64) -> Result<()> {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use shift_manager_core::platform::Target;
+    use shiftwrangler_core::platform::Target;
 
     #[tokio::test]
     async fn is_alive_always_true_locally() {

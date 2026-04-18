@@ -1,10 +1,10 @@
 [package]
-name = "shift-manager-agents"
+name = "shiftwrangler-agents"
 version.workspace = true
 edition.workspace = true
 
 [dependencies]
-shift-manager-core = { path = "../core" }
+shiftwrangler-core = { path = "../core" }
 tokio.workspace = true
 async-trait.workspace = true
 serde.workspace = true
@@ -19,4 +19,4 @@ nix.workspace = true
 [dev-dependencies]
 mockall.workspace = true
 tokio = { workspace = true, features = ["full"] }
-shift-manager-core = { path = "../core", features = ["test-utils"] }
+shiftwrangler-core = { path = "../core", features = ["test-utils"] }

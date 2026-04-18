@@ -6,7 +6,7 @@ use tracing_subscriber::EnvFilter;
 
 #[derive(Parser)]
 #[command(
-    name = "shift-manager",
+    name = "swctl",
     about = "Session lifecycle manager — pause, sleep, wake, resume",
     version
 )]

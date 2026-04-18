@@ -1,10 +1,10 @@
-use shift_manager_core::{
+use shiftwrangler_core::{
     agent::{AgentAdapter, SessionState},
     error::{Result, ShiftError},
     manifest::Manifest,
     platform::{Platform, Target},
 };
-use shift_manager_state::StateBackend;
+use shiftwrangler_state::StateBackend;
 use std::sync::Arc;
 use tracing::{error, info, warn};
 
@@ -106,11 +106,11 @@ impl LifecycleManager {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use shift_manager_core::{
+    use shiftwrangler_core::{
         agent::tests::{make_session, make_state, MockAgentAdapter},
-        platform::{tests::MockPlatform, PlatformMode, Target},
+        platform::{tests::MockPlatform, Target},
     };
-    use shift_manager_state::local_fs::LocalFsBackend;
+    use shiftwrangler_state::local_fs::LocalFsBackend;
     use tempfile::tempdir;
 
     fn make_lifecycle(
@@ -163,5 +163,6 @@ mod tests {
 
         let manifest_path = dir.path().join("manifest.json");
         assert!(manifest_path.exists());
+        let _ = state;
     }
 }
