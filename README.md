@@ -1,4 +1,4 @@
-# Shiftwrangler - Machine + Agent Sleep Automation
+# ShiftWrangler - Hardware-Aware Agent Session Management
 
 <p align="center">
     <img src="./assets/readme_header.png" alt="Shift Wrangler" />
