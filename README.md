@@ -1,6 +1,6 @@
 # Shiftwrangler
 
-![shift-wrangler-logo-text](./assets/combined-300.png)
+![shift-wrangler-logo-text](./assets/readme_header.png)
 
 > Round up your agents. Rest easy. Ride out at dawn.
 
