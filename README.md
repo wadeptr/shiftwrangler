@@ -1,4 +1,4 @@
-# ShiftWrangler - Hardware-Aware Agent Session Management
+# ShiftWrangler - Hardware-Aware Agent Management
 
 <p align="center">
     <img src="./assets/readme_header.png" alt="Shift Wrangler" />
