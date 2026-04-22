@@ -1,6 +1,8 @@
-# Shiftwrangler
+# Shiftwrangler - Machine + Agent Sleep Automation
 
-![shift-wrangler-logo-text](./assets/readme_header.png)
+<p align="center">
+    <img src="./assets/readme_header.png" alt="Shift Wrangler" />
+</p>
 
 > Round up your agents. Rest easy. Ride out at dawn.
 
