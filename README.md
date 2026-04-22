@@ -1,4 +1,4 @@
-# ShiftWrangler - Hardware & Agent Management
+# ShiftWrangler | Machine + Agent Management
 
 <p align="center">
     <img src="./assets/readme_header.png" alt="Shift Wrangler" />
